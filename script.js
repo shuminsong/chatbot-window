@@ -8,7 +8,7 @@ const sendChatBtn = document.querySelector("#send-btn");
 const plusWindowBtn = document.querySelector("#plus-window");
 
 let userMessage = null; // Variable to store user's message
-const API_URL = "https://52.196.161.77:8000/chatbot/chat"; // Replace with actual API URL
+const API_URL = "http://52.196.161.77:8000/chatbot/chat"; // Replace with actual API URL
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -22,7 +22,7 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "https://52.196.161.77:8000/chatbot/chat"; // Replace with your actual API URL
+    const API_URL = "http://52.196.161.77:8000/chatbot/chat"; // Replace with your actual API URL
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
